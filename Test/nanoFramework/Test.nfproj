@@ -18,6 +18,9 @@
   </PropertyGroup>
   <Import Project="$(NanoFrameworkProjectSystemPath)NFProjectSystem.props" Condition="Exists('$(NanoFrameworkProjectSystemPath)NFProjectSystem.props')" />
   <ItemGroup>
+    <Compile Include="HS2\FieldsTagsPublishFormat.cs" />
+    <Compile Include="HS2\SensorLocation.cs" />
+    <Compile Include="HS2\SensorResult.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -25,8 +28,8 @@
     <ProjectReference Include="..\..\nanoFramework.Json\nanoFramework.Json.nfproj" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="mscorlib, Version=1.1.1.7, Culture=neutral, PublicKeyToken=c07d481e9758c731">
-      <HintPath>..\..\packages\nanoFramework.CoreLibrary.1.1.1\lib\mscorlib.dll</HintPath>
+    <Reference Include="mscorlib, Version=1.2.5.0, Culture=neutral, PublicKeyToken=c07d481e9758c731">
+      <HintPath>..\..\packages\nanoFramework.CoreLibrary.1.2.5-preview.1\lib\mscorlib.dll</HintPath>
       <Private>True</Private>
       <SpecificVersion>True</SpecificVersion>
     </Reference>
